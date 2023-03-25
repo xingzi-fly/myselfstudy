@@ -1,0 +1,72 @@
+.w {
+    width: 1000px;
+    margin: 0 auto;
+    /* background-csolor: aqua; */
+    
+}
+
+.denglu {
+  
+    height: 522px;
+    border: 1.2px solid #ccc;
+    margin-top: 100px;
+    border-top: 3px solid red;
+    background: url(../image/1.jpg) no-repeat;
+    
+}
+
+.denglu h3 {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ececec;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+.login a {
+    color: #c81523;
+}
+
+.forr {
+    width: 600px;
+    margin: 50px auto 0;
+    /* background-color: aquamarine; */
+
+}
+.forr ul {
+    margin-top: 200px;
+}
+.forr ul li {
+    margin-bottom: 20px;
+}
+
+.forr ul li label {
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.forr ul li .inp{
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.forr ul li a {
+    padding-left: 250px;
+    color: rgb(135, 137, 235);
+}
+.btn {
+    margin: 20px 0  0 100px;
+    width: 200px;
+    height: 34px;
+    background-color: rgb(255, 0, 119);
+    color: #fff;
+    font-size: 14px;
+}

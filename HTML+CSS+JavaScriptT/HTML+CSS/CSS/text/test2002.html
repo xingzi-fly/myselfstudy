@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 100px;
+        }
+
+        ul li {
+            width: 120px;
+            height: 35px;
+            list-style: none;
+            perspective: 500px;
+           
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 0.4s;
+            
+        }
+
+        .box:hover{
+            transform: rotateX(80deg);
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .front {
+            background-color: pink;
+            z-index: 1;
+            /* transform: translateX(1px); */
+        }
+
+        .back {
+            background-color: skyblue;
+            transform: translateY(17px) rotateX(-90deg)  ;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="box">
+                <div class="front">你看看</div>
+                <div class="back">看什么</div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

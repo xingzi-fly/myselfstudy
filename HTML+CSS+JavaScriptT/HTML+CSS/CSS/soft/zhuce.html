@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人注册页面</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/zhuce.css">
+</head>
+
+<body>
+    <div class="w">
+        <div class="registerarea">
+            <h3>
+                注册新用户
+                <div class="login">我有账号，去<a href="denglu.html">登陆</a></div>
+            </h3>
+
+            <div class="reg-form">
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="">邮箱：</label>
+                            <input type="email" class="inp">
+                            <span class="error">
+                                <i class="error_icon"></i>
+                                邮箱格式不正确，请重新输入
+                            </span>
+                        </li>
+                        <li>
+                            <label for="">邮箱验证码：</label>
+                            <input type="text" class="inp">
+                            <!-- <span class="success">
+                                <i class="success_icon"></i>
+                                邮箱验证码输入正确
+                            </span> -->
+                        </li>
+                        <li>
+                            <label for="">登陆密码：</label>
+                            <input type="password" class="inp">
+                            <span class="success">
+                                <i class="success_icon"></i>
+                                登陆密码格式正确
+                            </span>
+                        </li>
+                        <li class="safe">
+                            安全程度
+                            <em class="ruo">弱</em>
+                            <em class="zhong">中</em>
+                            <em class="qiang">强</em>
+                        </li>
+                        <li>
+                            <label for="">确认密码：</label>
+                            <input type="password" class="inp">
+                            <span class="error">
+                                <i class="error_icon"></i>
+                                密码与上次输入不一样，请重新输入
+                            </span>
+                        </li>
+
+                        <li class="agree">
+                            <input type="checkbox">同意协议并注册
+                            <a href="#">《知晓用户协议》</a>
+                        </li>
+
+                        <li>
+                            <input type="submit" value="完成注册" class="btn">
+                        </li>
+
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

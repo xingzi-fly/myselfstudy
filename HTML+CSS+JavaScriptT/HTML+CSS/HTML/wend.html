@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>验证码识别应用</title>
+
+    <style>
+        /* 把我们所有标签的内外边距清零 */
+        * {
+            margin: 0;
+            padding: 0
+            
+        }
+
+        /* em 和 i 斜体的文字不倾斜 */
+        em,
+        i {
+            font-style: normal
+        }
+
+        /* 去掉li 的小圆点 */
+        li {
+            list-style: none
+        }
+
+        img {
+            /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+            border: 0;
+            /* 取消图片底侧有空白缝隙的问题 */
+            vertical-align: middle
+        }
+
+        button {
+            /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+            cursor: pointer
+        }
+
+        body {
+            margin: 0 auto;
+            margin-top: 100px;
+            width:900px;   
+            height:600px;  
+            background-color: skyblue;
+
+        }
+
+        table {
+            background:url(23.jpeg) no-repeat;
+            height: 400px;
+            width: 700px;
+
+        }
+
+        table tr td{
+            margin-left: 100px;
+        }
+
+        p { 
+            font-family: "楷体";
+         
+            font-size: 18px;
+            font-weight: 700;
+         }
+
+    </style>
+
+</head>
+
+<body>
+
+    <table >
+        <tr>
+            <td><p>请输入验证码图片：</p></td>
+            <td>
+                <input type="file">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="ty" value="num" check="checked"><p>纯数字</p>
+            </td>
+            <td>
+                <input type="radio" name="ty" value="zm"><p>纯字母</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="radio" name="ty" value="numzm"><p>数字+字母</p>
+            </td>
+            <td>
+                <input type="radio" name="ty" value="numys"><p>简单数字四则运算</p>
+            </td>
+        </tr>
+
+        <tr>
+
+            <td colspan="2" style="text-align:center">
+                <button> <p>提交</p> </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td> <p>验证码的结果是：</p> </td>
+            <td><input type="text" value="请先上传验证码图片"></td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

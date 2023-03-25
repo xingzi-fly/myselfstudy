@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>submit</button>
+    <button id="a1"> delete</button>
+    <ul>
+       
+    </ul>
+    
+    <script>
+        var btn=document.querySelector('button');
+        var text = document.querySelector('textarea')
+        var ul = document.querySelector('ul');
+        var a1 = document.getElementById('a1');
+
+        btn.onclick = function() {
+            if(text.value == '')
+            {
+                alert('please input ');
+                return false;
+            }
+            else
+            {
+            var li =document.createElement('li');
+            li.innerHTML = text.value+ "<a href='javascript:;'>delete</a>";
+            ul.insertBefore(li,ul.children[0]);
+            }
+
+            var as = document.querySelectorAll('a');
+            for(var i=0;i<as.length;i++)
+            {
+                as[i].onclick = function() {
+                    ul.removeChild(this.parentNode);
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

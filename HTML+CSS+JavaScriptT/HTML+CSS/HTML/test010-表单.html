@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <form>
+        <!-- text 文本框 用户可以输入文字 -->
+        用户名：<input type="text" name="username" value="请输入用户名" maxlength="6"/> <br />
+        <!-- password 密码框 -->
+        密码： <input type="password" name="pwd"/><br/>
+        <!--  radio 单选框 多选一-->
+        <!-- 单选框或者复选框checked属性，页面打开默认这个选择 -->
+        <!-- name是表单元素名字，性别单选按钮下必须有相同的名字 name才能实现多选一 -->
+        性别：<input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女" checked="checked">女<br/>
+        <!-- checkbox 复选框，实现多选 -->
+        爱好：<input type="checkbox" name="hobby">吃饭<input type="checkbox"name="hobby">睡觉<input type="checkbox"name="hobby">打豆豆<br/>
+
+        <!-- 点击了提交按钮，可以把表单域form中的值提交到后台服务器 -->
+        <input type="submit" value="注册">
+
+        <!-- 还原表单元素初始样子 -->
+        <input type="reset" value="重置"> <br />
+
+
+        <!-- button按钮 -->
+        <input type="button" value="获取短信验证码"><br />
+
+        <!-- 上传头像 -->
+        <!-- 文件域 -->
+        <input type="file">
+    </form>
+    
+
+</body>
+</html>
