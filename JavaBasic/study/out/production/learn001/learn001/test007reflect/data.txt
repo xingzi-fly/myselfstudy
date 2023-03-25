@@ -1,0 +1,10 @@
+=========Student=========
+name=小狗
+sex=男
+age=15
+className=军犬一班
+hobby=吃骨头
+=========Teacher=========
+name=金毛
+sex=男
+salary=2500.0

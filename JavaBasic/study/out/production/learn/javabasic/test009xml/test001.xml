@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--注释 -->
+
+<student>
+    <name>小狗</name>
+    <sex>男</sex>
+    <hobby>吃骨头</hobby>
+    <sql> select * from table where age &lt; 18</sql>
+    <![CDATA[
+        <sql> select * from table where age < 18</sql>
+    ]]>
+</student>

@@ -1,0 +1,5 @@
+2023-03-08 20:11:22.213 [main] DEBUG Test.class - main开始执行
+2023-03-08 20:11:22.215 [main] INFO  Test.class - 第二行日志
+2023-03-08 20:11:22.215 [main] TRACE Test.class - a=10
+2023-03-08 20:11:22.215 [main] TRACE Test.class - b=0
+2023-03-08 20:11:22.216 [main] ERROR Test.class - 出现异常java.lang.ArithmeticException: / by zero
